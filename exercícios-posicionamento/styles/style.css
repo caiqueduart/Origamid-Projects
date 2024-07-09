@@ -1,3 +1,140 @@
-img {
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    margin: 0px;
+    background-color: #f7f7f7;
+}
+
+.content {
+    max-width: 1000px;
+    padding: 0px;
+}
+
+.logo-content {
+    display: flex;
+    place-content: center;
+    margin-top: 50px;
+}
+
+p {
+    font-size: 20px;
+}
+
+.menu-buttons-content {
+    display: flex;
+    place-content: center;
+    gap: 20px;
+    margin: 65px 0px;
+}
+
+.menu-button {
+    background-color: #FFFFFF;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-size: 15px;
+    text-decoration: none;
+    color: #000000;
+}
+
+.box-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    
+    background-color: #FFFFFF;
+    position: relative;
+}
+
+.decorator {
+    position: absolute;
+    background-color: #ee2211;
+    width: 70px;
+    height: 4px;
+    top: 30px;
+    left: 46%;
+    right: 53%;
+}
+
+.box-1 {
+    grid-area: 1 / 1;
+    text-align: right;
+    padding: 50 30px;
+}
+
+.box-1 a {
+    display: inline-block;
+    background-color: #ee2211;
+    border: none;
+    border-radius: 5px;
+    padding: 15px 30px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.box-1 h2 {
+    font-size: 30px;
+}
+
+.box-2 {
+    grid-area: 1 / 2;
+}
+
+.box-2 img {
     max-width: 100%;
+}
+
+.box-3 {
+    grid-area: 2 / 1;
+    display: flex;
+    align-items: center;
+    background-color: #f7f7f7;
+}
+
+.box-3 p {
+    font-size: 64px;
+    color: #c6c6c6;
+    text-align: right;
+    font-weight: bold;
+    padding: 15px 30px;
+}
+
+.box-4 {
+    grid-area: 2 / 2;
+    padding: 60px 60px 40px 60px;
+}
+
+.info-1, .info-2, .info-3 {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    margin: 0px 0px 35px;
+}
+
+.info-1 img, .info-2 img, .info-3 img {
+    grid-area: 1 / 1;
+    margin: 0px;
+}
+
+.info-1 p, .info-2 p, .info-3 p {
+    grid-area: 2 / 2;
+    margin: 0px 0px 0px 20px;
+}
+
+.info-1 h3, .info-2 h3, .info-3 h3 {
+    grid-area: 1 / 2;
+    margin: 0px 0px 15px 20px;
+}
+
+.footer {
+    display: flex;
+    place-content: center;
+    padding: 20px;
+    margin-top: 60px;
+    background-color: #FFFFFF;
 }
