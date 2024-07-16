@@ -2,83 +2,92 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-body {
-    width: 100%;
-    display: grid;
-    justify-content: center;
-    margin: 0px;
+html {
     background-color: #f7f7f7;
 }
 
 .content {
-    max-width: 1000px;
-    padding: 0px;
+    display: grid;
 }
 
-.logo-content {
-    display: flex;
-    place-content: center;
-    margin-top: 50px;
+.header {
+    display: grid;
+}
+
+.logo {
+    justify-self: center;
+    margin-top: 3.1rem;
 }
 
 p {
-    font-size: 20px;
+    font-size: 1.25rem;
 }
 
 .menu-buttons-content {
     display: flex;
     place-content: center;
-    gap: 20px;
-    margin: 65px 0px;
+    gap: 1.25rem;
+    margin: 4rem 0rem;
 }
 
 .menu-button {
     background-color: #FFFFFF;
     border: none;
-    padding: 15px 30px;
-    border-radius: 5px;
-    font-size: 15px;
+    padding: 1rem 2rem;
+    border-radius: 0.3rem;
+    font-size: 1rem;
     text-decoration: none;
     color: #000000;
+    border: 0.15em solid transparent;
+}
+
+.menu-button:hover {
+    border: 0.15em solid #ee2211;
 }
 
 .box-content {
     display: grid;
+    justify-self: center;
+    border-radius: 0.3rem;
     grid-template-columns: 1fr 1fr;
+    max-width: 64rem;
     grid-template-rows: auto auto;
-    
     background-color: #FFFFFF;
     position: relative;
 }
 
-.decorator {
+.box-content::before {
+    content: '';
     position: absolute;
     background-color: #ee2211;
-    width: 70px;
-    height: 4px;
-    top: 30px;
-    left: 46%;
-    right: 53%;
+    width: 4rem;
+    height: 0.25rem;
+    top: 3%;
+    right: 47%;
 }
 
 .box-1 {
     grid-area: 1 / 1;
     text-align: right;
-    padding: 50 30px;
+    padding: 3rem 2rem;
 }
 
 .box-1 a {
     display: inline-block;
     background-color: #ee2211;
     border: none;
-    border-radius: 5px;
-    padding: 15px 30px;
+    border-radius: 0.3rem;
+    padding: 1rem 2rem;
     color: #FFFFFF;
     text-decoration: none;
 }
 
+.box-1 a:hover {
+    background-color: #c51505;
+}
+
 .box-1 h2 {
-    font-size: 30px;
+    font-size: 2rem;
 }
 
 .box-2 {
@@ -87,6 +96,7 @@ p {
 
 .box-2 img {
     max-width: 100%;
+    border-radius: 0rem 0.3rem 0rem 0rem;
 }
 
 .box-3 {
@@ -94,47 +104,47 @@ p {
     display: flex;
     align-items: center;
     background-color: #f7f7f7;
+    background-image: url(../img/onda.svg);
 }
 
 .box-3 p {
-    font-size: 64px;
+    font-size: 4rem;
     color: #c6c6c6;
     text-align: right;
     font-weight: bold;
-    padding: 15px 30px;
+    padding: 1rem 2rem;
 }
 
 .box-4 {
     grid-area: 2 / 2;
-    padding: 60px 60px 40px 60px;
+    padding: 4rem 4rem 2rem 4rem;
 }
 
 .info-1, .info-2, .info-3 {
     display: grid;
     grid-template-columns: auto auto;
     grid-template-rows: auto auto;
-    margin: 0px 0px 35px;
+    margin: 0rem 0rem 2rem;
 }
 
 .info-1 img, .info-2 img, .info-3 img {
     grid-area: 1 / 1;
-    margin: 0px;
+    margin: 0rem;
 }
 
 .info-1 p, .info-2 p, .info-3 p {
     grid-area: 2 / 2;
-    margin: 0px 0px 0px 20px;
+    margin: 0rem 0rem 0rem 1.25rem;
 }
 
 .info-1 h3, .info-2 h3, .info-3 h3 {
     grid-area: 1 / 2;
-    margin: 0px 0px 15px 20px;
+    margin: 0rem 0rem 1rem 1.25rem;
 }
 
 .footer {
-    display: flex;
-    place-content: center;
-    padding: 20px;
-    margin-top: 60px;
+    padding: 1rem;
+    margin-top: 4rem;
     background-color: #FFFFFF;
+    text-align: center;
 }
